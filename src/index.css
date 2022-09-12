@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+.list-item a {
+  @apply text-gray-400;
+}
+
+.bg-backdrop {
+  @apply bg-transparent;
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+  box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+}
+
+@media only screen and (max-width: 760px) {
+  .header-fixed {
+    @apply bg-transparent;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+  }
+}

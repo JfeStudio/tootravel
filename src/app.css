@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.list-item a.nav-active {
+  color: #293462;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #293462;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transform: scale(0.6);
+  color: white !important;
+}
+
+.swiper-button-disabled {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  scale: 0.8;
+  background-color: #293462;
+}
+
+.swiper.containers {
+  padding-bottom: 3rem;
+}
+
+.social-media:hover > * {
+  color: #293462;
+}
+
+.rounded-default-c {
+  border-radius: 10% 10% 65% 10%;
+}
+
+.rounded-default-p {
+  border-radius: 10% 65% 10% 10%;
+}
+
+.rounded-default-d {
+  border-radius: 10% 10% 10% 65%;
+}
+
+@media only screen and (max-width: 640px) {
+  .show-navigation {
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  .hide-navigation {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* custom scrolbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #333, #293462);
+  border-radius: 10px;
+}
+
+.shadow-circle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 16rem;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  border-radius: 50% 50% 0 0;
+  z-index: -999;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.shadow-circle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 105%;
+  transform: translateX(50%);
+  height: 17rem;
+  border: 1px solid #ccc;
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+  border-radius: 50% 50% 0 0;
+  z-index: -999;
+  /* box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.4); */
+}
+
+.btn-gradient {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+img.active {
+  opacity: 0.6;
+}
+
+.card-ina article.card:last-child::before {
+  content: "Coming Soon";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.8rem;
+  -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    infinite both;
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite
+    both;
+}
+
+.card-jpn article.card::before {
+  content: "Coming Soon";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.8rem;
+  -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    infinite both;
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite
+    both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .show-navigation {
+    opacity: 1;
+    transform: translateY(15px);
+    pointer-events: visible;
+  }
+
+  .hide-navigation {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .rows-introduction:nth-child(2) .hero-introduction {
+    order: 2 !important;
+  }
+  .rows-introduction:nth-child(4) .hero-introduction {
+    order: 2 !important;
+  }
+
+  .swiper.containers .swiper-slide {
+    width: 27rem !important;
+  }
+
+  .shadow-circle::after {
+    height: 22rem;
+    border-radius: 50% 50% 0 0;
+  }
+
+  .shadow-circle::before {
+    height: 23rem;
+    border-radius: 50% 50% 0 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: scale(1);
+    color: white !important;
+    padding: 0 4rem;
+  }
+}
